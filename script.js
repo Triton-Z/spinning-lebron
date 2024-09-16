@@ -1,13 +1,13 @@
-import * as THREE from 'https://threejs.org/build/three.module.js';
+import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.module.js';
 
-const scene = new THREE.Scene();
+        const scene = new THREE.Scene();
 scene.background = new THREE.Color("white");
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
 const loader = new THREE.TextureLoader();
 
-const light = new THREE.DirectionalLight("white", 3);
+const light = new THREE.DirectionalLight("white");
 light.position.set(0, 1, 1).normalize();
 scene.add(light);
 
