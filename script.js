@@ -7,7 +7,7 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 
 const loader = new THREE.TextureLoader();
 
-const light = new THREE.DirectionalLight("white");
+const light = new THREE.DirectionalLight("white", 3);
 light.position.set(0, 1, 1).normalize();
 scene.add(light);
 
